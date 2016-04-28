@@ -172,8 +172,7 @@ $( document ).ready(function() {
 			return false;
 		}
 
-		if ( location.indexOf("index.html") == -1) {
-
+		if ( location.indexOf("index.html") == -1 && location !== "http://www.grand-voyage.net/") {
 			$(document).scrollTop(curPos);
 			$("body, html").animate({"scrollTop": contentPosition}, 1000);
 		}

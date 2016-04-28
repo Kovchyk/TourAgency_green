@@ -264,6 +264,9 @@ a.menu-btn:before {
 	text-align: center;
 	color: #ff0000;
 }
+.advertisement span {
+	text-transform: lowercase;
+}
 #main .content {
 	float: left;  
     width: 80%;
@@ -359,13 +362,12 @@ a.menu-btn:before {
     bottom: 35px;
     color: #fff;
     display: none;
-    font-size: 10px;
+    font-size: 0;
     line-height: 12px;
     padding: 25px 25px 10px;
     position: fixed;
     right: 35px;
     background-size: 50% 50%;
-    text-indent: -99999px;
 }
 #btn-up:hover {
 	text-decoration: none;
