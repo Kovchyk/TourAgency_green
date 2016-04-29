@@ -188,10 +188,10 @@ $( document ).ready(function() {
 
 	var flag = true;
 	var time = 700;
-
+	var adv = $(".advertisement h3");
 	// Make an advertisement to blink
 	function animateInterval() {
-		var adv = $(".advertisement h3");
+		
 		if (flag) {
 			$(adv).animate({
 				opacity: 0.1
@@ -220,4 +220,40 @@ $( document ).ready(function() {
 	}
 
 	addMenuItemsToWholeDropMenu();
+
+	var flight = $(".flight");
+
+	function flightUp() {
+
+		flight.animate({
+			top: "0",
+			right: "110%"
+		}, 20000, function() {
+			$(this).css({
+				"top": "0",
+				"right": "-500px"
+			});
+		}).delay(10000);
+		console.log("flightUp");
+	}
+
+	function flightLand() {
+
+		flight.animate({
+			top: "100%",
+			right: "100%"
+		}, 18000, function() {
+			$(this).css({
+				"top": "100%",
+				"right": "-500px"
+			});
+		}).delay(14000);
+		console.log("flightDown");
+	}
+
+	flightUp();
+	flightLand();
+	setInterval(flightUp, 38000);
+	setInterval(flightLand, 38000);
+	
 });

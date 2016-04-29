@@ -9,6 +9,7 @@
   font-style: normal;
 } */
 body {
+	overflow-x:hidden;
 	margin: 0;
 	min-width: 303px;
 	height: 100%;
@@ -86,8 +87,8 @@ a:hover {text-decoration: underline;}
 }
 #header a.logo {
 	color: #fff;
-	font-size: 56px;
-	line-height: 58px;
+	font-size: 74px;
+	line-height: 76px;
 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 	filter: Shadow(Color=#666666, Direction=45, Strength=4);
 }
@@ -362,9 +363,8 @@ a.menu-btn:before {
     bottom: 35px;
     color: #fff;
     display: none;
-    font-size: 0;
-    line-height: 12px;
-    padding: 25px 25px 10px;
+    text-indent: -9999px;
+    padding: 25px 35px 10px;
     position: fixed;
     right: 35px;
     background-size: 50% 50%;
@@ -373,6 +373,12 @@ a.menu-btn:before {
 	text-decoration: none;
 	background-color: rgba(133, 234, 214, 0.6);
 	background-position: 50% 35%;
+}
+.flight {
+	position: absolute;
+	z-index: 10;
+	top: 100%;
+	right: -500px;
 }
 /*----- azovsea -----*/
 .content h2 {
@@ -447,6 +453,10 @@ a.menu-btn:before {
 		padding: 75px 0 0;
 		width: 970px;
 	}
+	#header a.logo {
+		font-size: 68px;
+		line-height: 70px;
+	}
 	#main #sidebar {
 		width: 20%;
 	}
@@ -464,6 +474,14 @@ a.menu-btn:before {
 	#wrapper {
 		width: 750px;
 		padding: 75px 1% 0;
+	}
+	#header a.logo {
+		font-size: 55px;
+		line-height: 57px;
+	}
+	#header .contacts .phone strong {
+		font-size: 30px;
+		line-height: 32px;
 	}
 	#main .content, .advertisement {
 		width: 70%;
@@ -494,6 +512,14 @@ a.menu-btn:before {
 	#wrapper {
 		padding-top: 10px;
 		width: 100%;
+	}
+	#header a.logo {
+		font-size: 58px;
+		line-height: 60px;
+	}
+	#header .contacts .phone strong {
+		font-size: 41px;
+		line-height: 43px;
 	}
 	#wrapper #header h1, #wrapper #header .contacts, #wrapper #header .contacts .phone {
 		width: 100%;
@@ -550,6 +576,10 @@ a.menu-btn:before {
 	}
 }
 @media screen and (max-width: 451px) {
+	#header a.logo {
+		font-size: 55px;
+		line-height: 57px;
+	}
 	#main .content .tour {
 		width: 100%;
 	}
