@@ -165,7 +165,6 @@ $( document ).ready(function() {
 		var contentPosition = $(".content").offset().top;
 		var location = window.location.href;
 		if ( $(".advertisement").length == 1 && location.indexOf("index.html") == -1) {
-			console.log("ok");
 			var advertisementPosition = $(".advertisement").offset().top;
 			$(document).scrollTop(curPos);
 			$("body, html").animate({"scrollTop": advertisementPosition}, 1000);
@@ -251,9 +250,9 @@ $( document ).ready(function() {
 		console.log("flightDown");
 	}
 
-	flightUp();
+	/*flightUp();
 	flightLand();
 	setInterval(flightUp, 38000);
-	setInterval(flightLand, 38000);
+	setInterval(flightLand, 38000);*/
 	
 });
